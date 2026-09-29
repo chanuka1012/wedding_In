@@ -1,0 +1,2 @@
+import { weddingData } from '../../data/weddingData'; import { SectionWrapper } from '../layout/SectionWrapper'; import { SectionTitle } from '../common/SectionTitle'
+export function StorySection() { return <SectionWrapper id="story" className="story"><SectionTitle eyebrow="Our story" title="A little love story"/><div className="story-list">{weddingData.story.map((item) => <article key={item.year}><span>{item.year}</span><div><h3>{item.title}</h3><p>{item.description}</p></div></article>)}</div></SectionWrapper> }

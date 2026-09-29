@@ -1,0 +1,2 @@
+import { weddingData } from '../../data/weddingData'; import { SectionWrapper } from '../layout/SectionWrapper'; import { SectionTitle } from '../common/SectionTitle'
+export function GallerySection() { return <SectionWrapper id="gallery" className="gallery"><SectionTitle eyebrow="Our moments" title="Captured with love"/><div className="gallery-grid">{weddingData.gallery.map((photo) => <img className={photo.tone} key={photo.src} src={photo.src} alt={photo.alt} loading="lazy" />)}</div></SectionWrapper> }

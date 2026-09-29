@@ -1,0 +1,2 @@
+import { weddingData } from '../../data/weddingData'; import { SectionWrapper } from '../layout/SectionWrapper'; import { SectionTitle } from '../common/SectionTitle'
+export function InvitationSection() { const { invitation, couple } = weddingData; return <SectionWrapper id="invitation" className="invitation"><div className="floral-mark">❦</div><SectionTitle eyebrow={invitation.title} title="A day to remember"><p>{invitation.message}</p></SectionTitle><p className="invitation-names">{couple.displayName}</p></SectionWrapper> }
